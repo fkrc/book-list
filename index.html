@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ankara Üniversitesi Kütüphanesi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+     
+        <div class="container mt-4">
+            <h1 class="display-4 text-center mb-5">
+              <i class="fas fa-book text-primary"></i> Ankara <span class="text-primary">Üniversitesi</span> Kütüphanesi</h1>
+              <form id="book-form">
+                <div class="form-group">
+                  <label for="title">Kitap Adı :</label>
+                  <input type="text" id="title" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="author">Yazar :</label>
+                  <input type="text" id="author" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="isbn">NO# :</label>
+                  <input type="text" id="isbn" class="form-control">
+                </div>
+                <input type="submit" value="Kitap Ekle" class="btn btn-primary btn-block">
+              </form>
+              <table class="table table-striped mt-5">
+                <thead>
+                  <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>NO#</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+              </table>
+          </div>
+        
+        <script src="https://kit.fontawesome.com/0d12e3c78d.js" crossorigin="anonymous"></script>
+        <script src="booklist.js" async defer></script>
+    </body>
+</html>
